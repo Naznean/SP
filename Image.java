@@ -1,11 +1,23 @@
-public class Image {
-    private String name;
+public class Image implements Element {
+    String imageName;
 
-    Image(String name) {
-        this.name=name;
+    Image(String imageName) {
+        this.imageName=imageName;
     }
 
-    public void  print() {
-        System.out.println("Image with name: " + this.name);
+    public void Image(String imageName){
+        this.imageName=imageName;
+    }
+
+    public String getImageNameName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    public void print(){
+        System.out.println(this.imageName);
     }
 }
