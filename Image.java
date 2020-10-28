@@ -1,9 +1,9 @@
+import java.util.concurrent.TimeUnit;
+
 public class Image implements Element {
     String imageName;
 
-    Image(String imageName) {
-        this.imageName=imageName;
-    }
+
 
     public void Image(String imageName){
         this.imageName=imageName;
@@ -15,6 +15,14 @@ public class Image implements Element {
 
     public void setImageName(String imageName) {
         this.imageName = imageName;
+    }
+    Image(String Name) {
+        imageName = Name;
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void print(){
